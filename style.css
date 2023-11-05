@@ -1,0 +1,24 @@
+#canvas{
+    background-color:blue;
+    width:100vw;
+    height:100vh;
+    margin:-8px;
+}
+#left-buttons{
+    background-color:pink;
+    float:left;
+    height:90vh;
+    width:15vw;
+    margin-top:5vh;
+    display:flex;
+    flex-direction:column;
+}
+#right-buttons{
+    background-color:pink;
+    float:right;
+    height:90vh;
+    width:15vw;
+    margin-top:5vh;
+    display:flex;
+    flex-direction:column;
+}
