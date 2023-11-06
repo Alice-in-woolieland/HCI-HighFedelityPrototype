@@ -61,12 +61,12 @@
                     <br>
                 Staff
             </div>
-            <div id="r2button" class="button">
+            <div id="r2button" class="button" onClick="showAndHide('departments')">
                 <span class="material-symbols-outlined" title="departments">
                     groups
                     </span>
                     <br>
-                    Departments
+                Departments
             </div>
             <div id="r3button" class="button">
                 <span class="material-symbols-outlined" title="support centers">
@@ -93,20 +93,40 @@
         <!--Okay this is the infoboxes. infocontainer makes it into the container, rightinfo makes it sit on the right side. Change the ID to match the button that it corresponds to!-->
         <!--Also, if you want to change things about the boxes- IE building map box, then go into style.css and follow the instructions i left there.-->
         <div id="staff" class="infocontainer rightinfo">
+            <div id="fredAgbo" class="staffmember" onClick="showAndHide('fredAgboInfo')">
+                <h3>Fred Agbo</h3>
+                <div id="fredAgboInfo">
+                    Assistant Professor, Computer Science
+                    Room 307
+                </div>
+                </div>
+            <div id="haiyanCheng" class="staffmember" onClick="showAndHide('haiyanChengInfo')">
+                <h3>Haiyan Cheng</h3>
+                <div id="haiyanChengInfo">
+                    Professor of Computer Science
+                    Room 207
+                </div>
+                </div>
+            <div id="calvinDeutschbein" class="staffmember" onClick="showAndHide('calvinDeutschbeinInfo')">
+                <h3>Calvin Deutschbein</h3>
+                <div id="calvinDeutschbeinInfo">
+                    Assistant Professor of Computer Science
+                    Room 206
+                </div>
+                </div>
+        </div>
+
+        <div id="departments" class="infocontainer rightinfo">
+            <div id="Computer Science" class="departments" onClick="showAndHide('CSStaff')">
+                <h3>Computer Science</h3>
+                <div id="CSStaff">
+                </div>
+            </div>
             
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac interdum mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada diam at urna cursus venenatis. Mauris ornare at leo ut tristique. Aliquam aliquam nibh sem, id faucibus ipsum pellentesque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie gravida justo nec molestie. In varius rhoncus nisl a porta.
-
-Curabitur venenatis purus in orci facilisis, quis pharetra tortor dapibus. Quisque vulputate eros vitae venenatis tincidunt. Integer molestie consectetur justo, nec luctus ipsum placerat in. Praesent erat orci, volutpat ac leo feugiat, congue venenatis purus. Cras scelerisque enim a tempus cursus. Mauris aliquet ac arcu maximus varius. Aenean dui metus, viverra vitae venenatis in, vehicula at nunc. Nam eu rutrum risus.
-
-Quisque semper faucibus elit, sit amet interdum libero tristique vitae. Fusce non augue a nunc eleifend tristique eu quis dolor. Nulla facilisi. Nullam nec turpis non turpis tempor vulputate nec at ex. Sed at mi fermentum, consectetur ligula a, cursus sapien. Nulla et tellus nec ante auctor interdum quis sed felis. Ut sodales ultrices ullamcorper. Sed nec imperdiet lectus. Sed maximus convallis lorem, elementum maximus augue facilisis vel.
-
-Aliquam ultrices massa sed arcu gravida fringilla. Nullam dapibus dolor eget ligula laoreet ullamcorper. Sed vel euismod tellus. Aliquam erat volutpat. Nulla ullamcorper urna at hendrerit consectetur. Suspendisse feugiat semper neque ac viverra. Vestibulum non diam a dui sollicitudin finibus. Vivamus porttitor erat at commodo scelerisque. Ut sit amet tristique magna. Cras eu fringilla massa. Ut porta sit amet quam a maximus. Ut ut velit leo. Duis ultrices neque vel accumsan ornare. Nunc neque neque, faucibus quis augue in, suscipit mattis tellus. Praesent at rhoncus tellus, quis commodo felis.
-
-Quisque condimentum fringilla leo quis egestas. Integer sed porttitor urna. Praesent bibendum in risus sed imperdiet. Nullam mattis dui ac velit auctor, in semper erat placerat. Suspendisse maximus ac arcu cursus volutpat. In elementum luctus nulla, nec vulputate sem venenatis in. Integer vitae nibh eu nisl lacinia rutrum. Ut tempor massa quis dignissim fermentum. Aenean pretium odio dolor, vitae facilisis ligula commodo vel. Sed consequat ullamcorper erat vitae placerat. Cras id pulvinar enim. Duis finibus massa at tellus volutpat vestibulum. Proin viverra est vitae leo molestie, ac rhoncus metus commodo. Pellentesque sed eros venenatis, dignissim elit sed, luctus nisl. Pellentesque cursus scelerisque consequat. Integer consequat convallis imperdiet. 
         </div>
         <div id="building info" class="infocontainer leftinfo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac interdum mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada diam at urna cursus venenatis. Mauris ornare at leo ut tristique. Aliquam aliquam nibh sem, id faucibus ipsum pellentesque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie gravida justo nec molestie. In varius rhoncus nisl a porta. Curabitur venenatis purus in orci facilisis, quis pharetra tortor dapibus. Quisque vulputate eros vitae venenatis tincidunt. Integer molestie consectetur justo, nec luctus ipsum placerat in. Praesent erat orci, volutpat ac leo feugiat, congue venenatis purus. Cras scelerisque enim a tempus cursus. Mauris aliquet ac arcu maximus varius. Aenean dui metus, viverra vitae venenatis in, vehicula at nunc. Nam eu rutrum risus. Quisque semper faucibus elit, sit amet interdum libero tristique vitae. Fusce non augue a nunc eleifend tristique eu quis dolor. Nulla facilisi. Nullam nec turpis non turpis tempor vulputate nec at ex. Sed at mi fermentum, consectetur ligula a, cursus sapien. Nulla et tellus nec ante auctor interdum quis sed felis. Ut sodales ultrices ullamcorper. Sed nec imperdiet lectus. Sed maximus convallis lorem, elementum maximus augue facilisis vel. Aliquam ultrices massa sed arcu gravida fringilla. Nullam dapibus dolor eget ligula laoreet ullamcorper. Sed vel euismod tellus. Aliquam erat volutpat. Nulla ullamcorper urna at hendrerit consectetur. Suspendisse feugiat semper neque ac viverra. Vestibulum non diam a dui sollicitudin finibus. Vivamus porttitor erat at commodo scelerisque. Ut sit amet tristique magna. Cras eu fringilla massa. Ut porta sit amet quam a maximus. Ut ut velit leo. Duis ultrices neque vel accumsan ornare. Nunc neque neque, faucibus quis augue in, suscipit mattis tellus. Praesent at rhoncus tellus, quis commodo felis. Quisque condimentum fringilla leo quis egestas. Integer sed porttitor urna. Praesent bibendum in risus sed imperdiet. Nullam mattis dui ac velit auctor, in semper erat placerat. Suspendisse maximus ac arcu cursus volutpat. In elementum luctus nulla, nec vulputate sem venenatis in. Integer vitae nibh eu nisl lacinia rutrum. Ut tempor massa quis dignissim fermentum. Aenean pretium odio dolor, vitae facilisis ligula commodo vel. Sed consequat ullamcorper erat vitae placerat. Cras id pulvinar enim. Duis finibus massa at tellus volutpat vestibulum. Proin viverra est vitae leo molestie, ac rhoncus metus commodo. Pellentesque sed eros venenatis, dignissim elit sed, luctus nisl. Pellentesque cursus scelerisque consequat. Integer consequat convallis imperdiet.
+            Lorem ipsum dolor sit amet, help me please
         </div>
     </div>
 </body>
