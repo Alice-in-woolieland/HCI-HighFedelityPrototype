@@ -1,6 +1,9 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
+:root{
+    --radius:10px;
+}
 #canvas{
     background-color:blue;
     background-image:url("images/backgrounds/background.jpg");
@@ -10,7 +13,7 @@ body{
     margin:-8px;
 }
 #left-buttons, #right-buttons{
-    background-color:red;
+    background-color:#BA0C2F;
     height:90vh;
     width:15vw;
     margin-top:5vh;
@@ -19,9 +22,13 @@ body{
 }
 #right-buttons{
     float:right;
+    border-top-left-radius:var(--radius);
+    border-bottom-left-radius:var(--radius);
 }
 #left-buttons{
     float:left;
+    border-top-right-radius:var(--radius);
+    border-bottom-right-radius:var(--radius);
 }
 .button{
     margin:auto;
@@ -30,15 +37,25 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     user-select: none;
+    width:80%;
+    padding:5%;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.36);
 }
 .infocontainer{
+    box-sizing:border-box;
     width:34vw;
     height:90vh;
     margin-top:5vh;
     background-color:black;
     color:white;
-    overflow-y:scroll;
+    overflow-x:hidden;
     display:none;
+    padding:5%;
+    border-radius:var(--radius);
+    -webkit-border-radius:var(--radius);
+    -moz-border-radius:var(--radius);
+    -ms-border-radius:var(--radius);
+    -o-border-radius:var(--radius);
 }
 .rightinfo{
     float:right;
@@ -64,9 +81,12 @@ Always reference w3 and mdn docs! This is the most technical aspect imo, and its
 }
 
 .imagebox{
-    width:45vh;
-  height:fit-content;
-  margin:auto;
+    height:fit-content;
+    max-height:90vh;
+    margin:auto;
+    overflow:hidden;
+    padding:0%;
+
   }
 .imagebox > img{
   width:100%;
