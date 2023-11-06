@@ -32,12 +32,13 @@ body{
     user-select: none;
 }
 .infocontainer{
-    width:30vw;
+    width:34vw;
     height:90vh;
     margin-top:5vh;
     background-color:black;
     color:white;
     overflow-y:scroll;
+    display:none;
 }
 .rightinfo{
     float:right;
@@ -57,3 +58,7 @@ To me, this is the fun part lol.
 Always reference w3 and mdn docs! This is the most technical aspect imo, and its easy to break things. Just keep trying!
 */
 /* Designated Chance space ⬇️⬇️⬇️⬇️*/
+
+.hidden{
+    display:none;
+}
