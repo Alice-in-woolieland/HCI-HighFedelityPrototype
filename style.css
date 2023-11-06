@@ -62,3 +62,12 @@ Always reference w3 and mdn docs! This is the most technical aspect imo, and its
 .hidden{
     display:none;
 }
+
+.imagebox{
+    width:45vh;
+  height:fit-content;
+  margin:auto;
+  }
+.imagebox > img{
+  width:100%;
+  }
