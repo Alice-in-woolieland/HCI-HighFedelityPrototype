@@ -47,3 +47,13 @@ body{
     float:left;
     margin-left:1vw;
 }
+/* OKAY so to make a new class, you use this template.
+
+.newclass{
+}
+
+then assign variables on the inside. just mess with things till it looks right. Please try to avoid using PX as your measurement, vh (viewport height) and vw (viewport width) look better and work on a variety of screens.
+To me, this is the fun part lol.
+Always reference w3 and mdn docs! This is the most technical aspect imo, and its easy to break things. Just keep trying!
+*/
+/* Designated Chance space ⬇️⬇️⬇️⬇️*/
