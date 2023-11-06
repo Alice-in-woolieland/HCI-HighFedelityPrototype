@@ -31,28 +31,29 @@
     <div id="canvas">
         <!--Do not mess with anything inside of the <span> tags.-->
         <div id="left-buttons"> 
-            <div id="l1button" class="button">
-                <span class="material-symbols-outlined">
+            <div id="l1button" class="button" onClick="showAndHide('building info')">
+                <span class="material-symbols-outlined" title="building info">
                     info
                     </span>
                     <br>
                     Building <br> Info
             </div>
-            <div id="l2button" class="button">
-                <span class="material-symbols-outlined">
+            <div id="l2button" class="button" onClick="showAndHide('building map')">
+                <span class="material-symbols-outlined" title="building map">
                     apartment
                     </span>
                     <br>
                     Building <br> Map
             </div>
-            <div id="l3button" class="button">
-                <span class="material-symbols-outlined">
+            <div id="l3button" class="button" onClick="showAndHide('campus map')">
+                <span class="material-symbols-outlined" title="campus map">
                     map
                     </span>
                     <br>
                     Campus <br> Map
             </div>
         </div>
+
         <div id="right-buttons">
             <div id="r1button" class="button" onClick="showAndHide('staff')">
                 <span class="material-symbols-outlined" title="staff">
@@ -90,6 +91,7 @@
                     Event <br> Spaces
             </div>
         </div>
+        
         <!--Okay this is the infoboxes. infocontainer makes it into the container, rightinfo makes it sit on the right side. Change the ID to match the button that it corresponds to!-->
         <!--Also, if you want to change things about the boxes- IE building map box, then go into style.css and follow the instructions i left there.-->
         <div id="staff" class="infocontainer rightinfo">
@@ -111,6 +113,7 @@
                 <h3>Calvin Deutschbein</h3>
                 <div id="calvinDeutschbeinInfo">
                     Assistant Professor of Computer Science
+                    aaaa
                     Room 206
                 </div>
                 </div>
@@ -126,7 +129,21 @@
 
         </div>
         <div id="building info" class="infocontainer leftinfo">
-            Lorem ipsum dolor sit amet, help me please
+            <div>
+                Ford Hall is a three-story academic hall at Willamette University in Salem in the U.S. state of Oregon. Completed in 2009, the building houses classrooms, offices, and laboratories from several disciplines of the school's College of Liberal Arts.
+            </div>
+        
         </div>
+
+        <div id="building map" class="infocontainer imagebox" >
+            <img src="images/backgrounds/ford-map.png">
+        
+        </div>
+
+        <div id="campus map" class="infocontainer imagebox" >
+            <img src="">
+        
+        </div>
+
     </div>
 </body>
