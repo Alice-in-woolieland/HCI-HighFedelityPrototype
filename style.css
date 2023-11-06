@@ -1,12 +1,16 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
 #canvas{
     background-color:blue;
+    background-image:url("images/backgrounds/background.jpg");
+    background-size:cover;
     width:100vw;
     height:100vh;
     margin:-8px;
 }
-#left-buttons{
+#left-buttons, #right-buttons{
     background-color:red;
-    float:left;
     height:90vh;
     width:15vw;
     margin-top:5vh;
@@ -14,13 +18,10 @@
     flex-direction:column;
 }
 #right-buttons{
-    background-color:red;
     float:right;
-    height:90vh;
-    width:15vw;
-    margin-top:5vh;
-    display:flex;
-    flex-direction:column;
+}
+#left-buttons{
+    float:left;
 }
 .button{
     margin:auto;
@@ -28,4 +29,21 @@
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
+    user-select: none;
+}
+.infocontainer{
+    width:30vw;
+    height:90vh;
+    margin-top:5vh;
+    background-color:black;
+    color:white;
+    overflow-y:scroll;
+}
+.rightinfo{
+    float:right;
+    margin-right:1vw;
+}
+.leftinfo{
+    float:left;
+    margin-left:1vw;
 }

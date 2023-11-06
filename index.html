@@ -13,9 +13,19 @@
           color:white;
         }
         </style> <!--icons stylesheet-->
+    <script>
+        function showAndHide(div) {
+  var x = document.getElementById(div);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+    </script>
 </head>
 <body>
-    <div id="canvas"> <!--eventually this will host the map-->
+    <div id="canvas">
         <div id="left-buttons">
             <div id="l1button" class="button">
                 <span class="material-symbols-outlined">
@@ -40,7 +50,7 @@
             </div>
         </div>
         <div id="right-buttons">
-            <div id="r1button" class="button">
+            <div id="r1button" class="button" onClick="showAndHide('staff')">
                 <span class="material-symbols-outlined" title="staff">
                     contacts
                     </span>
@@ -75,6 +85,22 @@
                     <br>
                     Event <br> Spaces
             </div>
+        </div>
+        <div id="staff" class="infocontainer rightinfo">
+            
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac interdum mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada diam at urna cursus venenatis. Mauris ornare at leo ut tristique. Aliquam aliquam nibh sem, id faucibus ipsum pellentesque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie gravida justo nec molestie. In varius rhoncus nisl a porta.
+
+Curabitur venenatis purus in orci facilisis, quis pharetra tortor dapibus. Quisque vulputate eros vitae venenatis tincidunt. Integer molestie consectetur justo, nec luctus ipsum placerat in. Praesent erat orci, volutpat ac leo feugiat, congue venenatis purus. Cras scelerisque enim a tempus cursus. Mauris aliquet ac arcu maximus varius. Aenean dui metus, viverra vitae venenatis in, vehicula at nunc. Nam eu rutrum risus.
+
+Quisque semper faucibus elit, sit amet interdum libero tristique vitae. Fusce non augue a nunc eleifend tristique eu quis dolor. Nulla facilisi. Nullam nec turpis non turpis tempor vulputate nec at ex. Sed at mi fermentum, consectetur ligula a, cursus sapien. Nulla et tellus nec ante auctor interdum quis sed felis. Ut sodales ultrices ullamcorper. Sed nec imperdiet lectus. Sed maximus convallis lorem, elementum maximus augue facilisis vel.
+
+Aliquam ultrices massa sed arcu gravida fringilla. Nullam dapibus dolor eget ligula laoreet ullamcorper. Sed vel euismod tellus. Aliquam erat volutpat. Nulla ullamcorper urna at hendrerit consectetur. Suspendisse feugiat semper neque ac viverra. Vestibulum non diam a dui sollicitudin finibus. Vivamus porttitor erat at commodo scelerisque. Ut sit amet tristique magna. Cras eu fringilla massa. Ut porta sit amet quam a maximus. Ut ut velit leo. Duis ultrices neque vel accumsan ornare. Nunc neque neque, faucibus quis augue in, suscipit mattis tellus. Praesent at rhoncus tellus, quis commodo felis.
+
+Quisque condimentum fringilla leo quis egestas. Integer sed porttitor urna. Praesent bibendum in risus sed imperdiet. Nullam mattis dui ac velit auctor, in semper erat placerat. Suspendisse maximus ac arcu cursus volutpat. In elementum luctus nulla, nec vulputate sem venenatis in. Integer vitae nibh eu nisl lacinia rutrum. Ut tempor massa quis dignissim fermentum. Aenean pretium odio dolor, vitae facilisis ligula commodo vel. Sed consequat ullamcorper erat vitae placerat. Cras id pulvinar enim. Duis finibus massa at tellus volutpat vestibulum. Proin viverra est vitae leo molestie, ac rhoncus metus commodo. Pellentesque sed eros venenatis, dignissim elit sed, luctus nisl. Pellentesque cursus scelerisque consequat. Integer consequat convallis imperdiet. 
+        </div>
+        <div id="building info" class="infocontainer leftinfo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac interdum mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada diam at urna cursus venenatis. Mauris ornare at leo ut tristique. Aliquam aliquam nibh sem, id faucibus ipsum pellentesque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie gravida justo nec molestie. In varius rhoncus nisl a porta. Curabitur venenatis purus in orci facilisis, quis pharetra tortor dapibus. Quisque vulputate eros vitae venenatis tincidunt. Integer molestie consectetur justo, nec luctus ipsum placerat in. Praesent erat orci, volutpat ac leo feugiat, congue venenatis purus. Cras scelerisque enim a tempus cursus. Mauris aliquet ac arcu maximus varius. Aenean dui metus, viverra vitae venenatis in, vehicula at nunc. Nam eu rutrum risus. Quisque semper faucibus elit, sit amet interdum libero tristique vitae. Fusce non augue a nunc eleifend tristique eu quis dolor. Nulla facilisi. Nullam nec turpis non turpis tempor vulputate nec at ex. Sed at mi fermentum, consectetur ligula a, cursus sapien. Nulla et tellus nec ante auctor interdum quis sed felis. Ut sodales ultrices ullamcorper. Sed nec imperdiet lectus. Sed maximus convallis lorem, elementum maximus augue facilisis vel. Aliquam ultrices massa sed arcu gravida fringilla. Nullam dapibus dolor eget ligula laoreet ullamcorper. Sed vel euismod tellus. Aliquam erat volutpat. Nulla ullamcorper urna at hendrerit consectetur. Suspendisse feugiat semper neque ac viverra. Vestibulum non diam a dui sollicitudin finibus. Vivamus porttitor erat at commodo scelerisque. Ut sit amet tristique magna. Cras eu fringilla massa. Ut porta sit amet quam a maximus. Ut ut velit leo. Duis ultrices neque vel accumsan ornare. Nunc neque neque, faucibus quis augue in, suscipit mattis tellus. Praesent at rhoncus tellus, quis commodo felis. Quisque condimentum fringilla leo quis egestas. Integer sed porttitor urna. Praesent bibendum in risus sed imperdiet. Nullam mattis dui ac velit auctor, in semper erat placerat. Suspendisse maximus ac arcu cursus volutpat. In elementum luctus nulla, nec vulputate sem venenatis in. Integer vitae nibh eu nisl lacinia rutrum. Ut tempor massa quis dignissim fermentum. Aenean pretium odio dolor, vitae facilisis ligula commodo vel. Sed consequat ullamcorper erat vitae placerat. Cras id pulvinar enim. Duis finibus massa at tellus volutpat vestibulum. Proin viverra est vitae leo molestie, ac rhoncus metus commodo. Pellentesque sed eros venenatis, dignissim elit sed, luctus nisl. Pellentesque cursus scelerisque consequat. Integer consequat convallis imperdiet.
         </div>
     </div>
 </body>
