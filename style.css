@@ -65,6 +65,7 @@ body{
     float:left;
     margin-left:1vw;
 }
+
 /* OKAY so to make a new class, you use this template.
 
 .newclass{
@@ -81,9 +82,7 @@ Always reference w3 and mdn docs! This is the most technical aspect imo, and its
 }
 
 .imagebox{
-    height:90vh;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
     overflow:hidden;
     padding:0%;
     width:fit-content;

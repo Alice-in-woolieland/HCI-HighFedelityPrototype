@@ -1,56 +1,59 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <!--adding icon font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--icons stylesheet (do not change)-->
-    <style> 
+    <style>
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24;
-          font-size:75px;
-          color:white;
+            font-variation-settings:
+                'FILL'0,
+                'wght'400,
+                'GRAD'0,
+                'opsz'24;
+            font-size: 75px;
+            color: white;
         }
-        </style> 
+    </style>
     <!--DO NOT MESS with PLEASE.-->
     <script>
         function showAndHide(div) {
-  var x = document.getElementById(div);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
+            var x = document.getElementById(div);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 </head>
+
 <body>
     <div id="canvas">
         <!--Do not mess with anything inside of the <span> tags.-->
-        <div id="left-buttons"> 
+        <div id="left-buttons">
             <div id="l1button" class="button" onClick="showAndHide('building info')">
                 <span class="material-symbols-outlined" title="building info">
                     info
-                    </span>
-                    <br>
-                    Building <br> Info
+                </span>
+                <br>
+                Building <br> Info
             </div>
             <div id="l2button" class="button" onClick="showAndHide('building map')">
                 <span class="material-symbols-outlined" title="building map">
                     apartment
-                    </span>
-                    <br>
-                    Building <br> Map
+                </span>
+                <br>
+                Building <br> Map
             </div>
             <div id="l3button" class="button" onClick="showAndHide('campus map')">
                 <span class="material-symbols-outlined" title="campus map">
                     map
-                    </span>
-                    <br>
-                    Campus <br> Map
+                </span>
+                <br>
+                Campus <br> Map
             </div>
         </div>
 
@@ -58,40 +61,40 @@
             <div id="r1button" class="button" onClick="showAndHide('staff')">
                 <span class="material-symbols-outlined" title="staff">
                     contacts
-                    </span>
-                    <br>
+                </span>
+                <br>
                 Staff
             </div>
             <div id="r2button" class="button" onClick="showAndHide('departments')">
                 <span class="material-symbols-outlined" title="departments">
                     groups
-                    </span>
-                    <br>
+                </span>
+                <br>
                 Departments
             </div>
             <div id="r3button" class="button" onClick="showAndHide('support centers')">
                 <span class="material-symbols-outlined" title="support centers">
                     help_clinic
-                    </span>
-                    <br>
-                    Support <br> Centers
+                </span>
+                <br>
+                Support <br> Centers
             </div>
             <div id="r4button" class="button" onClick="showAndHide('events')">
                 <span class="material-symbols-outlined" title="events">
                     calendar_month
-                    </span>
-                    <br>
-                    Events
+                </span>
+                <br>
+                Events
             </div>
             <div id="r5button" class="button" onClick="showAndHide('event spaces')">
                 <span class="material-symbols-outlined" title="event spaces">
                     celebration
-                    </span>
-                    <br>
-                    Event <br> Spaces
+                </span>
+                <br>
+                Event <br> Spaces
             </div>
         </div>
-        
+
         <!--Okay this is the infoboxes. infocontainer makes it into the container, rightinfo makes it sit on the right side. Change the ID to match the button that it corresponds to!-->
         <!--Also, if you want to change things about the boxes- IE building map box, then go into style.css and follow the instructions i left there.-->
         <div id="staff" class="infocontainer rightinfo">
@@ -101,14 +104,14 @@
                     Assistant Professor, Computer Science
                     Room 307
                 </div>
-                </div>
+            </div>
             <div id="haiyanCheng" class="staffmember" onClick="showAndHide('haiyanChengInfo')">
                 <h3>Haiyan Cheng</h3>
                 <div id="haiyanChengInfo">
                     Professor of Computer Science
                     Room 207
                 </div>
-                </div>
+            </div>
             <div id="calvinDeutschbein" class="staffmember" onClick="showAndHide('calvinDeutschbeinInfo')">
                 <h3>Calvin Deutschbein</h3>
                 <div id="calvinDeutschbeinInfo">
@@ -116,7 +119,7 @@
                     aaaa
                     Room 206
                 </div>
-                </div>
+            </div>
         </div>
 
         <div id="departments" class="infocontainer rightinfo">
@@ -127,35 +130,32 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="support centers" class="infocontainer rightinfo">
-            <div id="QUAD Center", class="support center" onClick="showAndHide('QUADinfo')">
+            <div id="QUAD Center" , class="support center" onClick="showAndHide('QUADinfo')">
                 <h3>QUAD Center</h3>
                 <div id="QUADinfo">
                     This is QUAD center
                 </div>
-
             </div>
-
-
-        </div>
-            
-
-        </div>
-        <div id="building info" class="infocontainer leftinfo">
-            <div>
-                Ford Hall is a three-story academic hall at Willamette University in Salem in the U.S. state of Oregon. Completed in 2009, the building houses classrooms, offices, and laboratories from several disciplines of the school's College of Liberal Arts.
-            </div>
-        
         </div>
 
-        <div id="building map" class="infocontainer imagebox">
-            <img src="images/backgrounds/ford-map.png">
+    <div id="building info" class="infocontainer leftinfo">
+        <div>
+            Ford Hall is a three-story academic hall at Willamette University in Salem in the U.S. state of Oregon.
+            Completed in 2009, the building houses classrooms, offices, and laboratories from several disciplines of the
+            school's College of Liberal Arts.
         </div>
 
-        <div id="campus map" class="infocontainer imagebox" >
-            <img src="">
-        </div>
+    </div>
+
+    <div id="building map" class="infocontainer imagebox">
+        <img src="images/backgrounds/ford-map.png">
+    </div>
+
+    <div id="campus map" class="infocontainer imagebox">
+        <img src="">
+    </div>
 
     </div>
 </body>
