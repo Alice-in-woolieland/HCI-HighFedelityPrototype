@@ -1,12 +1,13 @@
 body{
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 :root{
     --radius:10px;
 }
 #canvas{
-    background-color:blue;
+    background-color:#BA0C2F;
     background-image:url("images/backgrounds/background.jpg");
     background-size:cover;
     width:100vw;
@@ -44,7 +45,7 @@ body{
 }
 .infocontainer{
     box-sizing:border-box;
-    width:34vw;
+    width:33vw;
     height:90vh;
     background-color:black;
     color:white;
@@ -64,6 +65,30 @@ body{
 .leftinfo{
     float:left;
     margin-left:1vw;
+}
+.middleinfo{
+    position:fixed;
+    margin-left:33vw;
+}
+.staffmember{
+    background-color:#333333;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    padding:1px;
+    margin-bottom:10px;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.36);
+    
+}
+.staffmember > h3 {
+    text-align:center;
+}
+.staffmember:hover{
+    background-color:white;
+    color:black;
+   
 }
 
 /* OKAY so to make a new class, you use this template.
