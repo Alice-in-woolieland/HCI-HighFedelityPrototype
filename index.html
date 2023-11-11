@@ -19,36 +19,68 @@
     </style>
     <!--DO NOT MESS with PLEASE.-->
     <script>
-        function showAndHide(div) {
-            var x = document.getElementById(div);
-            if (x.style.display === "none") {
-                x.style.display = "block";
+        function hideAlter() {
+            var x = document.getElementsByClassName('infocontainer');
+            for (let i = 0; i < x.length; i++){
+                if (x[i].style.display === "block") {
+                console.log("hideAlter IF")
+                x[i].style.display = "none";
             } else {
-                x.style.display = "none";
+                console.log("hideAlter ELSE")
+            } 
             }
         }
     </script>
+    <script>
+        function showAndHide(div) {
+            var x = document.getElementById(div);
+            if (x.style.display === "none" | x.style.display === "") {
+                x.style.display = "block";
+                
+            } else {
+               x.style.display = "none";
+                
+            }
+        }
+    </script>
+    <script>
+        function showAndHide2(div) {
+            var x = document.getElementById(div);
+            if (x.style.display === "none" | x.style.display === "") {
+                x.style.display = "block";
+                console.log("showandhide2 IF");
+                
+            } else {
+               console.log("showandhide2 ELSE");
+               hideAlter();
+                
+            }
+        }
+    </script>
+    <!--
+        
+    -->
 </head>
 
 <body>
     <div id="canvas">
         <!--Do not mess with anything inside of the <span> tags.-->
         <div id="left-buttons">
-            <div id="l1button" class="button" onClick="showAndHide('building info')">
+            <div id="l1button" class="button" onClick="showAndHide2('building info')">
                 <span class="material-symbols-outlined" title="building info">
                     info
                 </span>
                 <br>
                 Building <br> Info
             </div>
-            <div id="l2button" class="button" onClick="showAndHide('building map')">
+            <div id="l2button" class="button" onClick="showAndHide2('building map')">
                 <span class="material-symbols-outlined" title="building map">
                     apartment
                 </span>
                 <br>
                 Building <br> Map
             </div>
-            <div id="l3button" class="button" onClick="showAndHide('campus map')">
+            <div id="l3button" class="button" onClick="showAndHide2('campus map')">
                 <span class="material-symbols-outlined" title="campus map">
                     map
                 </span>
@@ -58,35 +90,35 @@
         </div>
 
         <div id="right-buttons">
-            <div id="r1button" class="button" onClick="showAndHide('staff')">
+            <div id="r1button" class="button" onClick="showAndHide2('staff')">
                 <span class="material-symbols-outlined" title="staff">
                     contacts
                 </span>
                 <br>
                 Staff
             </div>
-            <div id="r2button" class="button" onClick="showAndHide('departments')">
+            <div id="r2button" class="button" onClick="showAndHide2('departments')">
                 <span class="material-symbols-outlined" title="departments">
                     groups
                 </span>
                 <br>
                 Departments
             </div>
-            <div id="r3button" class="button" onClick="showAndHide('support centers')">
+            <div id="r3button" class="button" onClick="showAndHide2('support centers')">
                 <span class="material-symbols-outlined" title="support centers">
                     help_clinic
                 </span>
                 <br>
                 Support <br> Centers
             </div>
-            <div id="r4button" class="button" onClick="showAndHide('events')">
+            <div id="r4button" class="button" onClick="showAndHide2('events')">
                 <span class="material-symbols-outlined" title="events">
                     calendar_month
                 </span>
                 <br>
                 Events
             </div>
-            <div id="r5button" class="button" onClick="showAndHide('event spaces')">
+            <div id="r5button" class="button" onClick="showAndHide2('event spaces')">
                 <span class="material-symbols-outlined" title="event spaces">
                     celebration
                 </span>
